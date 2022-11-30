@@ -1,5 +1,5 @@
 // TODO: Include packages needed for this application
-const inquierer = require('inquirer')
+const inquirer = require('inquirer')
 const fs = require('fs')
 const Mdgenerator = require('./utils/generateMarkdown')
 
@@ -142,9 +142,9 @@ function writeToFile(fileName, data) {  fs.writeFile(fileName, data, (err) => {
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
-    .then(function (userInput) {
-        console.log(userInput)
-        writeToFile("README.md", generateMarkdown(userInput));
+    .then(function (questionpromptsAnswered) {
+        console.log(questionpromptsAnswered)
+        writeToFile("README.md", Mdgenerator(questionpromptsAnswered));
     });
 };
 
