@@ -1,8 +1,6 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {
-
-}
+function renderLicenseBadge(license) {}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -18,38 +16,38 @@ function generateMarkdown(data) {
 
   ## Licensing:
 
-  [![license](https://img.shields.io/badge/license-${data.licensing}-blue)](https://shields.io)
+  [![license](https://img.shields.io/badge/License-${data.license}-blue)](https://shields.io)
   
   ## Table of Contents 
-  
+
   - [Description](#description)
   - [Installation](#installation)
   - [Usage](#usage)
   - [Contribution](#contribution)
   - [Testing](#testing)
-  - [Additional Info](#additional-info)
+  - [Contact Information](#Contact-Information)
 
   ## Description:
-  ${data.description}
+  ${data.descriptionprompt}
 
   ## Installation:
-  ${data.installation}
+  ${data.installationprompt}
 
   ## Usage:
-  ${data.usage}
+  ${data.usageprompt}
 
   ## License:
-  ${data.licensing}
+  ${data.licensingprompt}
 
   ## Contribution:
-  ${data.contribution}
+  ${data.contributionprompt}
 
   ## Testing:
-  ${data.testing}
+  ${data.testingprompt}
 
-  ## Additional Info:
-  - Github: [${data.github}](https://github.com/${data.github})
-  - Email: ${data.email} `;
+  ## Contact Information:
+  - Github: [${data.githubuser}](https://github.com/${data.githubuser})
+  - Email: ${data.emailprompt} `;
 
 }
 

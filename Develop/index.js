@@ -9,7 +9,7 @@ const questions = [
 //Project prompt
  {
     type: 'input',
-    name: 'title',
+    name: 'titleprompt',
     message: 'Please enter a title for this project',
     validate: projectInput => {
         if (projectInput) {
@@ -23,7 +23,7 @@ const questions = [
 //Description prompt
 {
     type: 'input',
-    name: 'description',
+    name: 'descriptionprompt',
     message: 'Please provide a description for this project',
     validate: descriptionInput => {
         if (descriptionInput) {
@@ -37,7 +37,7 @@ const questions = [
 //Installation prompt
 {
     type: 'input',
-    name: 'installation',
+    name: 'installationprompt',
     message: 'How is this project installed?',
     validate: installationInput => {
         if (installationInput) {
@@ -51,7 +51,7 @@ const questions = [
 //Usage prompt
 {
     type: 'input',
-    name: 'usage',
+    name: 'usageprompt',
     message: 'How is this project used?',
     validate: usagePrompt => {
         if (usagePrompt) {
@@ -65,7 +65,7 @@ const questions = [
 //Contribution prompt
 {
     type: 'input',
-    name: 'contribution',
+    name: 'contributionprompt',
     message: 'How can users contribute to this project?',
     validate: contributionPrompt => {
         if (contributionPrompt) {
@@ -79,7 +79,7 @@ const questions = [
 //Test prompt
 {
     type: 'input',
-    name: 'testing',
+    name: 'testingprompt',
     message: 'How do you test this project?',
     validate: testPrompt => {
         if (testPrompt) {
@@ -93,7 +93,7 @@ const questions = [
 // License prompt
 {
     type: 'checkbox',
-    name: 'license',
+    name: 'licenseprompt',
     message: 'Select a license for your project',
     choices: ['Apache', 'MIT', 'Mozilla-Public', 'GNU-General-Public', 'Common-Development-and Distribution', 'None'],
     validate: licensePrompt => {
@@ -108,7 +108,7 @@ const questions = [
 //GitHub User Prompt
 {
     type: 'input',
-    name: 'github-user',
+    name: 'githubuser',
     message: 'Enter your GitHub Username',
     validate: githubuserPrompt => {
         if (githubuserPrompt) {
@@ -122,7 +122,7 @@ const questions = [
 // Email Prompt
 {
     type: 'input',
-    name: 'email',
+    name: 'emailprompt',
     message: 'Please input an Email address?',
 },
 
