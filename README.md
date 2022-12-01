@@ -21,6 +21,6 @@ git clone into your repository and run node index.js from terminal in the develo
 
 
 ## Links
-https://github.com/dawki5/Professional-Readme-Generator
+Repo: https://github.com/dawki5/Professional-Readme-Generator
 
-https://drive.google.com/file/d/1wGYF39fQldBrqzZAUMrBi70Feumz-G2m/view
+Demo Recording: https://drive.google.com/file/d/1wGYF39fQldBrqzZAUMrBi70Feumz-G2m/view
