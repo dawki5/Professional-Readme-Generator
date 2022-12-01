@@ -1,27 +1,15 @@
 // TODO: Create a function that returns a license based on which license is passed in
-function renderLicense(license) {
-  if (license === 'MIT')
-  return '![License : MIT](https://img.shields.io/badge/License-MIT-blue)(https://opensource.org/licenses/MIT)'
- }
+function renderLicense(license) {}
 
- if (license === 'Apache') {
-  return '![License : Apache](https://img.shields.io/badge/License-Apache-blue)(https://opensource.org/licenses/Apache-2.0)'
- }
- if (license === 'Mozilla-Public') {
-  return '![License : Mozilla-Public](https://img.shields.io/badge/License-Mozilla-blue)(https://opensource.org/licenses/MPL-2.0)'
- }
- if (license === 'None') {
- return '![License : None](https://img.shields.io/badge/License-None-red)(https://opensource.org/)'
-}
 
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
+function Mdgenerator(data) {
+  return `# ${data.titleprompt}
 
-  ## Licensing:
+  ## License:
 
-${renderLicense(data.license)}
+  [![license](https://img.shields.io/badge/license-${data.license}-blue)](https://opensource.org/)
 
   
   ## Table of Contents 
@@ -42,9 +30,6 @@ ${renderLicense(data.license)}
   ## Usage:
   ${data.usageprompt}
 
-  ## License:
-  ${data.licensingprompt}
-
   ## Contribution:
   ${data.contributionprompt}
 
@@ -58,4 +43,4 @@ ${renderLicense(data.license)}
 }
 
 
-module.exports = generateMarkdown;
+module.exports = Mdgenerator;

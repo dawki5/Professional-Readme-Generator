@@ -1,8 +1,9 @@
-# undefined
+# The Hunt
 
-  ## Licensing:
+  ## License:
 
-  [![license](https://img.shields.io/badge/License-undefined-blue)](https://shields.io)
+  [![license](https://img.shields.io/badge/license-MIT-blue)](https://opensource.org/)
+
   
   ## Table of Contents 
 
@@ -14,22 +15,19 @@
   - [Contact Information](#Contact-Information)
 
   ## Description:
-  for what
+  used for something
 
   ## Installation:
-  to do
+  cloned
 
   ## Usage:
-  if not
-
-  ## License:
-  undefined
+  whatever
 
   ## Contribution:
-  will make
+  by doing something
 
   ## Testing:
-  for sure
+  however
 
   ## Contact Information:
   - Github: [dawki5](https://github.com/dawki5)

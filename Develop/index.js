@@ -92,8 +92,8 @@ const questions = [
 },
 // License prompt
 {
-    type: 'checkbox',
-    name: 'licenseprompt',
+    type: 'list',
+    name: 'license',
     message: 'Select a license for your project',
     choices: ['Apache', 'MIT', 'Mozilla-Public', 'None'],
     validate: licensePrompt => {
@@ -127,7 +127,6 @@ const questions = [
 },
 
 
-
 ];
 
 // TODO: Create a function to write README file
@@ -142,9 +141,9 @@ function writeToFile(fileName, data) {  fs.writeFile(fileName, data, (err) => {
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
-    .then(function (questionpromptsAnswered) {
-        console.log(questionpromptsAnswered)
-        writeToFile("README.md", Mdgenerator(questionpromptsAnswered));
+    .then(function (data) {
+        console.log(data)
+        writeToFile("README.md", Mdgenerator(data));
     });
 };
 
